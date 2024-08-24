@@ -60,8 +60,8 @@ const server = http.createServer((req, res) => {
         res.end(output);
 
     //product page    
-    }else if(pathname === '/product'){
-        res.writeHead(200, { 'Content-type': 'text/html' });
+    }else if(pathname === "/product"){
+        res.writeHead(200, { 'Content-type': "text/html" });
         const product = dataObj[query.id];
         const output = replaceTemplate(tempProduct, product);
         res.end(output);
